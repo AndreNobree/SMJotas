@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'verdana';
+    
+}
+body{
+    background-image: url(./imagens/backg2.jpeg);
+    background-size: contain;/*travar a imagem na tela */
+    background-repeat: no-repeat;
+}
+#logo{
+    margin-left: 85%;
+    margin-top: 5%;
+    color: #fff;
+    cursor: pointer;
+}
+#intro{
+    margin-top: 8%;
+    margin-left: 5%;
+    color: #fff;
+}
+#intro h1{
+    font-size: 100px;
+}
+#png1{
+    text-align: center;
+    margin-top: 8%;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.side-bar{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(black, darkgreen);
+    position: absolute;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+.menu{
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+}
+.social-links img{
+    width: 32px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+.social-links{
+    width: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.conteudo{
+    background-color:  #FFF;
+}   
+
+#QuemSomos h1{
+    font-family: Palatino, URW Palladio L, serif;
+    padding-top: 50px;
+    text-align: center;
+}
+.texto1{
+    font-family: Apple Chancery, cursive;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.slider h1{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.slider{
+    width: 800px;
+    border: 10px;
+    overflow: hidden;/*vai arredondar as bordas da direita*/
+    margin: auto;
+}
+.slides{
+    width: 500%; /*numero concernente ao numero de imagens*/
+    height: 500px; 
+    display: flex; /*tudo na msm linha*/
+
+}
+.slides input{
+    display: none;/*fazer os botões sumirem*/
+}
+.slide{ /*div das imagens*/
+    width: 20%;
+    transition: 2s;
+} 
+.slide img{ /*mexer com o tamanho da imagem*/
+    width: 800px;
+    height: 500px;
+}
+
+/*nevegação*/
+/*fazer primeiro o manual-btn dps faz o navegation-manual*/
+
+.navegation-manual{ /*centralizar os btns*/ 
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+
+}
+.manual-btn{/*vai aparecer os botões(radio) embaixo pra passar*/
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){ /*mexer com o layout dos botões*/ 
+    margin-right: 40px;
+}
+.manual-btn:hover{ /*quando o mouse passar em cima, vai ficar azul*/
+    background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
