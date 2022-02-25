@@ -1,13 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
 *{
     margin: 0px;
     padding: 0px;
-    font-family: 'verdana';
-    
 }
 body{
     background-image: url(./imagens/backg2.jpeg);
     background-size: contain;/*travar a imagem na tela */
     background-repeat: no-repeat;
+    color: white;
 }
 #logo{
     margin-left: 85%;
@@ -19,6 +19,9 @@ body{
     margin-top: 8%;
     margin-left: 5%;
     color: #fff;
+}
+#intro small{
+     font-family: Apple Chancery, cursive;
 }
 #intro h1{
     font-size: 100px;
@@ -58,28 +61,31 @@ body{
 }
 
 .conteudo{
-    background-color:  #FFF;
+    /*background-color: #2F4F4F;*/
+    background: linear-gradient(black, darkgreen, black);
 }   
 
 #QuemSomos h1{
-    font-family: Palatino, URW Palladio L, serif;
+    font-family: "Poppins", sans-serif;
     padding-top: 50px;
     text-align: center;
 }
 .texto1{
-    font-family: Apple Chancery, cursive;
-    margin-top: 80px;
+    margin-top: 100px;
     text-align: center;
 }
 
 .slider h1{
     text-align: center;
-    margin-top: 10%;
-}
+    color: white;
+    margin-top: 180px;
+    margin-bottom: 10px;
+}   
 
 .slider{
     width: 800px;
     border: 10px;
+    font-family: "Poppins", sans-serif;
     overflow: hidden;/*vai arredondar as bordas da direita*/
     margin: auto;
 }
@@ -96,9 +102,11 @@ body{
     width: 20%;
     transition: 2s;
 } 
-.slide img{ /*mexer com o tamanho da imagem*/
-    width: 800px;
-    height: 500px;
+.slide img{ /*mexer com o tamanho da imagem*/                /*mexer com a imagem dentro do bloco aq, mexa aqui!!!*/
+    width: 790px;
+    height: 490px;
+    border-radius: 20px;
+    border: 2px solid #40D3DC;
 }
 
 /*nevegação*/
@@ -137,4 +145,27 @@ body{
 }
 #radio4:checked ~ .first{
     margin-left: -60%;
+}
+
+
+.bac_local{
+    width: 85%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    background: linear-gradient(black, darkgreen);
+}
+#local1{
+    margin-top: 100px;
+    margin-left: 30px;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    float: left;
+}
+
+.local{
+    margin-top: 100px;
+    margin-left: 40px;
+    width: 700px;  
+    display: inline-block;
 }
