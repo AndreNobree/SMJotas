@@ -61,7 +61,6 @@ body{
 }
 
 .conteudo{
-    /*background-color: #2F4F4F;*/
     background: linear-gradient(black, darkgreen, black);
 }   
 
@@ -83,17 +82,16 @@ body{
 }   
 
 .slider{
-    width: 800px;
+    width: 500px;
     border: 10px;
     font-family: "Poppins", sans-serif;
     overflow: hidden;/*vai arredondar as bordas da direita*/
-    margin: auto;
+    margin: auto; 
 }
 .slides{
-    width: 500%; /*numero concernente ao numero de imagens*/
+    width: 900%; /*numero concernente ao numero de imagens*/
     height: 500px; 
     display: flex; /*tudo na msm linha*/
-
 }
 .slides input{
     display: none;/*fazer os botões sumirem*/
@@ -103,10 +101,10 @@ body{
     transition: 2s;
 } 
 .slide img{ /*mexer com o tamanho da imagem*/                /*mexer com a imagem dentro do bloco aq, mexa aqui!!!*/
-    width: 790px;
+    width: 490px;
     height: 490px;
     border-radius: 20px;
-    border: 2px solid #40D3DC;
+    border: 2px solid black;
 }
 
 /*nevegação*/
@@ -114,14 +112,13 @@ body{
 
 .navegation-manual{ /*centralizar os btns*/ 
     position: absolute;
-    width: 800px;
+    width: 500px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
-
 }
 .manual-btn{/*vai aparecer os botões(radio) embaixo pra passar*/
-    border: 2px solid #40D3DC;
+    border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -131,20 +128,32 @@ body{
     margin-right: 40px;
 }
 .manual-btn:hover{ /*quando o mouse passar em cima, vai ficar azul*/
-    background: #40D3DC;
+    background: darkgreen;
 }
 
 #radio1:checked ~ .first{
     margin-left: 0;
 }
 #radio2:checked ~ .first{
-    margin-left: -20%;
+    margin-left: -14.2%;
 }
 #radio3:checked ~ .first{
-    margin-left: -40%;
+    margin-left: -33.2%;
 }
 #radio4:checked ~ .first{
     margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+#radio6:checked ~ .first{
+    margin-left: -100%;
+}
+#radio7:checked ~ .first{
+    margin-left: -120%;
+}
+#radio8:checked ~ .first{
+    margin-left: -140%;
 }
 
 
@@ -165,7 +174,59 @@ body{
 
 .local{
     margin-top: 100px;
-    margin-left: 40px;
-    width: 700px;  
+    margin-left: 50px;
+    margin-bottom: 80px;
+    width: 600px;  
     display: inline-block;
+}
+.formul{
+    width: 85%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 20px;
+    background: linear-gradient(darkgreen, black);
+}
+#nom{
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding: 5px;
+    width: 20%
+}
+#sobren{
+    margin-top: 30px;
+    margin-left: 100px;
+    border-radius: 20px;
+    padding: 5px;
+    width: 20%
+}
+#ema{   
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding: 5px;
+    width: 20%
+}
+#telefone{
+    margin-top: 20px;
+    margin-left: 100px;
+    border-radius: 20px;
+    padding: 5px;
+    width: 20%
+}
+#obsev{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    padding: 30px;
+    width: 91%;
+}
+#env{
+    margin-left: 20px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    padding: 5px; 
+    width: 80px; 
+    color: white;
+    background: green;
 }

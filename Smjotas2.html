@@ -50,8 +50,8 @@
                 </h3>
             </div>
 
-            <div class="slider">
-                <h1><i>Trabalhos :</i></h1><br><br>
+            <div class="slider"><!--mudar a posição dos botões-->
+                <h1><i>Nossos Trabalhos :</i></h1><br><br>
                 <div class="slides">
 
                     <!--radio button start-->
@@ -59,23 +59,43 @@
                     <input type="radio" name="radio-btn" id="radio2">
                     <input type="radio" name="radio-btn" id="radio3">
                     <input type="radio" name="radio-btn" id="radio4">
+                    <input type="radio" name="radio-btn" id="radio5">
+                    <input type="radio" name="radio-btn" id="radio6">
+                    <input type="radio" name="radio-btn" id="radio7">
+                    <input type="radio" name="radio-btn" id="radio8">
 
                     <!--1°imagem sempre diferente-->
 
                     <div class="slide first">
-                        <img src="./imagens/1.png">
+                        <img src="./imagens_gal/img2.jpg">
                     </div>
 
                     <div class="slide">
-                        <img src="./imagens/2.png">   
+                        <img src="./imagens_gal/img15.jpg">   
                     </div>
 
                     <div class="slide">
-                        <img src="./imagens/3.png">   
+                        <img src="./imagens_gal/img8.jpg">   
                     </div>
 
                     <div class="slide">
-                        <img src="./imagens/4.png">   
+                        <img src="./imagens_gal/img7.jpg">   
+                    </div>
+
+                    <div class="slide">
+                        <img src="./imagens_gal/img3.jpg">   
+                    </div>
+
+                    <div class="slide">
+                        <img src="./imagens_gal/img18.jpg">   
+                    </div>
+
+                    <div class="slide">
+                        <img src="./imagens_gal/img6.jpg">   
+                    </div>
+
+                    <div class="slide">
+                        <img src="./imagens_gal/img4.jpg">   
                     </div>
 
                 </div>
@@ -85,26 +105,93 @@
                     <label for="radio2" class="manual-btn"></label>
                     <label for="radio3" class="manual-btn"></label>
                     <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                    <label for="radio7" class="manual-btn"></label>
+                    <label for="radio8" class="manual-btn"></label>
                 </div>
 
             </div>
 
             <div class="bac_local">
                 
-                <div id="local1">
-                    <h1><i>Nossa Localização :</i></h1><br><br><br>
-                    <h3>Cidade - Sobral/CE</h3><br>
-                    <h3>Bairro - Mucambinho</h3><br>
-                    <h3>Rua - Av. Ministro César Cals</h3><br>
-                    <h3>Número - 689</h3><br>
-                    <h4>Ponto de Referência - De Frente ao Hospital Regional Norte (HRN)</h4><br>
+                <div id="local1"><!--ESTAMOS LOCALIXADOS NA AVENIDA MINISTRO CÉSAR CALS, 689, MUCAMBINHO, SOBRLA/CE-->
+                    <h1><i>Nossa Localização :</i></h1><br><br><br><br><br>
+                    <h4>
+                        - ESTAMOS LOCALIXADOS NA AVENIDA MINISTRO CÉSAR CALS,<br> 
+                          689, MUCAMBINHO, SOBRAL/CE
+                    </h4>            
                 </div>
 
                 <div class="local">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.602307964028!2d-40.37139258524117!3d-3.677614197324133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7eac6c7ecb9a91d%3A0x1433f4219ee34e1e!2sAv.%20Min.%20C%C3%A9sar%20Cals%2C%20689%20-%20Mucambinho%2C%20Sobral%20-%20CE%2C%2062030-520!5e0!3m2!1spt-BR!2sbr!4v1645724339759!5m2!1spt-BR!2sbr" width="600" height="450" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.602307964028!2d-40.37139258524117!3d-3.677614197324133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7eac6c7ecb9a91d%3A0x1433f4219ee34e1e!2sAv.%20Min.%20C%C3%A9sar%20Cals%2C%20689%20-%20Mucambinho%2C%20Sobral%20-%20CE%2C%2062030-520!5e0!3m2!1spt-BR!2sbr!4v1645724339759!5m2!1spt-BR!2sbr" width="500" height="350" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-<!--colocar uma div no quem somos e olocar uma borda-->
+            
+            <div class="formul">
+                <form id="entra" action="">
+                
+                    <label for="nome"></label>
+                    <input
+                        type="text"
+                        name="nome"
+                        id="nom"
+                        placeholder="Digite seu Nome:"
+                        title="Nome"
+                        required
+                    >
+
+                    <label for="sobrenome"></label>
+                    <input
+                        type="text"
+                        name="sobrenome"
+                        id="sobren"
+                        placeholder="Digite seu Sobrenome:"
+                        title="SobreNome"
+                        required
+                    ><br><br>
+
+                    <label for="email"></label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="ema"
+                        placeholder="Digite seu Email:"
+                        title="Email"
+                        required
+                    >
+
+                    <label for="tel"></label>
+                    <input
+                        type="tel"
+                        name="tel"
+                        id="telefone"
+                        placeholder="(ddd) + Número:"
+                        title="tel"
+                        required
+                    ><br><br>   
+
+                    <label for="obs"></label>
+                    <input
+                        type="text"
+                        name="obs"
+                        id="obsev"
+                        placeholder="Texto (observações):"
+                        title="obs"
+                        required
+                    > <br><br>   
+
+                    <input 
+                    type="submit" 
+                    value="Enviar" 
+                    id="env" 
+                    name="enviar"
+                    >      
+
+                </form>
+
+            </div>
+
 
         </div>
 
