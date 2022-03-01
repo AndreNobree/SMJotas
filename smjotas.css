@@ -5,7 +5,7 @@
 }
 body{
     background-image: url(./imagens/backg2.jpeg);
-    background-size: contain;/*travar a imagem na tela */
+    background-size: contain;
     background-repeat: no-repeat;
     color: white;
 }
@@ -85,49 +85,46 @@ body{
     width: 500px;
     border: 10px;
     font-family: "Poppins", sans-serif;
-    overflow: hidden;/*vai arredondar as bordas da direita*/
+    overflow: hidden;
     margin: auto; 
 }
 .slides{
-    width: 900%; /*numero concernente ao numero de imagens*/
+    width: 900%; 
     height: 500px; 
-    display: flex; /*tudo na msm linha*/
+    display: flex; 
 }
 .slides input{
-    display: none;/*fazer os botões sumirem*/
+    display: none;
 }
 .slide{ /*div das imagens*/
     width: 20%;
     transition: 2s;
 } 
-.slide img{ /*mexer com o tamanho da imagem*/                /*mexer com a imagem dentro do bloco aq, mexa aqui!!!*/
+.slide img{ 
     width: 490px;
     height: 490px;
     border-radius: 20px;
     border: 2px solid black;
 }
 
-/*nevegação*/
-/*fazer primeiro o manual-btn dps faz o navegation-manual*/
-
-.navegation-manual{ /*centralizar os btns*/ 
+.navegation-manual{ 
     position: absolute;
     width: 500px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
 }
-.manual-btn{/*vai aparecer os botões(radio) embaixo pra passar*/
+.manual-btn{
     border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
 }
-.manual-btn:not(:last-child){ /*mexer com o layout dos botões*/ 
+.manual-btn:not(:last-child){ 
     margin-right: 40px;
 }
-.manual-btn:hover{ /*quando o mouse passar em cima, vai ficar azul*/
+.manual-btn:hover{ 
     background: darkgreen;
 }
 
