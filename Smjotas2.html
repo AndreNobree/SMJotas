@@ -3,9 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="André Nobre">
+        <meta name="description" content="Móveis de Qualidade">
         <link rel="stylesheet" href="smjotas.css">
         <title>SmJotas2</title>
-    </head>
+    </head>;
 
     <body>
         <div id="logo">
@@ -115,11 +117,11 @@
 
             <div class="bac_local">
                 
-                <div id="local1"><!--ESTAMOS LOCALIXADOS NA AVENIDA MINISTRO CÉSAR CALS, 689, MUCAMBINHO, SOBRLA/CE-->
+                <div id="local1">
                     <h1><i>Nossa Localização :</i></h1><br><br><br><br><br>
                     <h4>
-                        - ESTAMOS LOCALIXADOS NA AVENIDA MINISTRO CÉSAR CALS,<br> 
-                          689, MUCAMBINHO, SOBRAL/CE
+                        ESTAMOS LOCALIXADOS NA AVENIDA MINISTRO CÉSAR CALS,<br> 
+                        689, MUCAMBINHO, SOBRAL/CE
                     </h4>            
                 </div>
 
@@ -128,8 +130,10 @@
                 </div>
             </div>
             
-            <div class="formul">
-                <form id="entra" action="">
+                <div class="formul">
+
+                    <form id="entra" action="">
+                    <h1 id="text_form"><i>Entre em Contato :</i></h1>
                 
                     <label for="nome"></label>
                     <input
@@ -166,20 +170,23 @@
                         type="tel"
                         name="tel"
                         id="telefone"
-                        placeholder="(ddd) + Número:"
+                        pattern="[0-9]{11}"
+                        placeholder="(DDD) + Número:"
                         title="tel"
                         required
                     ><br><br>   
 
                     <label for="obs"></label>
+                    <!--
                     <input
                         type="text"
-                        name="obs"
+                         name="obs"
                         id="obsev"
                         placeholder="Texto (observações):"
                         title="obs"
-                        required
-                    > <br><br>   
+                        required-->
+                    <textarea id="obsev" name="obs" placeholder="Texto(observações)" title="OBS" required></textarea>
+                    <br><br>   
 
                     <input 
                     type="submit" 

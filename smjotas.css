@@ -61,7 +61,7 @@ body{
 }
 
 .conteudo{
-    background: linear-gradient(black, darkgreen, black);
+    background: linear-gradient(black, #006400, black);
 }   
 
 #QuemSomos h1{
@@ -171,7 +171,6 @@ body{
     font-family: "Poppins", sans-serif;
     float: left;
 }
-
 .local{
     margin-top: 100px;
     margin-left: 50px;
@@ -185,47 +184,63 @@ body{
     margin-top: 100px;
     border-radius: 20px;
     background: linear-gradient(darkgreen, black);
+    font-family: "Poppins", sans-serif;
 }
-#nom{
-    margin-top: 30px;
+#text_form{
     margin-left: 20px;
+    margin-top: 30px;
+    display: inline-block;  
+    float: left;
+}
+#nom{  
+    margin-left: 50px;
     border-radius: 20px;
-    padding: 5px;
-    width: 20%
+    border: solid 2px darkgreen;
+    padding: 8px;
+    width: 20%;
+    display: inline-block;
 }
 #sobren{
     margin-top: 30px;
     margin-left: 100px;
     border-radius: 20px;
-    padding: 5px;
-    width: 20%
+    border: solid 2px darkgreen;
+    padding: 8px;
+    width: 20%;
+    display: inline-block;
 }
 #ema{   
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 364px;
     border-radius: 20px;
-    padding: 5px;
-    width: 20%
+    border: solid 2px darkgreen;
+    padding: 8px;
+    width: 20%;
 }
 #telefone{
     margin-top: 20px;
     margin-left: 100px;
     border-radius: 20px;
-    padding: 5px;
-    width: 20%
+    border: solid 2px darkgreen;
+    padding: 8px;
+    width: 20%;
 }
 #obsev{
     margin-top: 20px;
     margin-left: 20px;
     border-radius: 20px;
+    border: solid 2px darkgreen;
     padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 80px;
     width: 91%;
 }
 #env{
     margin-left: 20px;
     margin-bottom: 40px;
     border-radius: 20px;
-    padding: 5px; 
+    border: solid 2px darkgreen;
+    padding: 8px; 
     width: 80px; 
     color: white;
     background: green;
